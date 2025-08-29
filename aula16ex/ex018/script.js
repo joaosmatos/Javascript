@@ -11,7 +11,7 @@ function isnumero(n) {
     }
 }
 
-funtion inlista(n, l) {
+function inlista(n, l) {
     if(l.indexOf(Number(n)) != -1) {
         return true
     } else {
