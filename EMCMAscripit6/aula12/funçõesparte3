@@ -1,0 +1,26 @@
+// funções gradoras parte 3
+
+function* arcoiris() {
+    yield "azul";
+    yield "amarelo";
+    yield "vermelho";
+}
+
+var it = arcoiris();
+
+for (const iterator of arcoiris()) {
+    console.log(iteretor);
+}
+
+//outra forma
+
+function* perguntas() {
+    const nome = yield "qual seu nome?";
+    const idade = yield "qual sua idade?";
+    return `nome: ${nome}, idade:${idade}`;
+}
+
+const it = perguntas();
+console.log(it.next());
+console.log(it.next('sabrina'));
+console.log(it.next(17));
