@@ -6,6 +6,6 @@ export function soma(...params) {
     return s;
 }
 
-function subtracao(x, y) {
+export function subtracao(x, y) {
     return x - y;
 }
