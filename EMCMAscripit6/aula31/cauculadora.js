@@ -1,4 +1,4 @@
-function soma(...params) {
+export function soma(...params) {
     let s= 0;
     for (let i = 0; i < params.length; i++) {
         s += params[i];
