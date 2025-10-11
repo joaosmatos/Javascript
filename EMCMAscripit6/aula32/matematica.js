@@ -5,3 +5,6 @@ let retangulo = (c, h) => {
 }
 
 exports.retangulo = retangulo;
+
+const PI = Math.PI;
+exports.PI = Math.PI;
