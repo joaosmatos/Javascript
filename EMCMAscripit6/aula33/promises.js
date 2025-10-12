@@ -1,17 +1,13 @@
 // promises -> promessas
 
-function notificaUsuario(sms, email) {
-    console.log("começa notificção");
-    sms();
-    email();
-}
+var calc = require("./soma");
 
-notificaUsuario(
-    function () {
-        console.log("sms notificando...")
-    },
-    function () {
-        console.log("email notificado...")
-    }
-)
-console.log("end");
+console.log("Executa soma.");
+calc.soma(5, 6)
+    .then(function (res) {
+        console.log("soma é: " + res);
+    })
+    .catch(function (err) {
+        console.error(err);
+    });
+console.log("End");
