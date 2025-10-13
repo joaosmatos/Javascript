@@ -27,3 +27,7 @@ var fazAlgo3 = function (numero) {
 
     });
 }
+
+function erroCallback(error) {
+    console.log(`Deu ruim mostra a trajedia: ${error}`);
+}
