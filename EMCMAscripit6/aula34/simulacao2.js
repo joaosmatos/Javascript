@@ -19,3 +19,4 @@ fazAlgo1()
     .then(function (terceiroResultado) {
         console.log('ufa chegou no fim: ' + terceiroResultado);
     })
+    .catch(erroCallback);
