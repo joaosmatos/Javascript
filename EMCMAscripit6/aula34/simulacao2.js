@@ -20,3 +20,12 @@ fazAlgo1()
         console.log('ufa chegou no fim: ' + terceiroResultado);
     })
     .catch(erroCallback);
+
+    // reduzida
+    fazAlgo1()
+        .then(primeiroResultado => fazAlgo2(primeiroResultado))
+        .then(segundoResultado => fazAlgo3(segundoResultado))
+        .then(terceiroResultado => {
+            console.log('ufa chegou no fim:' + terceiroResultado);
+        })
+        .catch(erroCallback);
